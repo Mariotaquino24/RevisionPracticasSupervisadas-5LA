@@ -1,0 +1,260 @@
+.banner{
+width: 1000px;
+height: 150px;
+  border: 7px solid black;
+margin: auto;
+
+    background-size: 100% 100%;
+
+    animation: banner 10s infinite linear alternate;
+ 
+}
+
+ @keyframes banner{
+  0%,40%{
+background-image: url(img/banner1.jpg);
+}
+40%,70%{
+ background-image: url(img/banner3.jpg);
+}
+70%,100%{
+    background-image: url(img/banner2.jpg);
+}
+
+}
+
+body{
+  background: linear-gradient(-45deg, #26D0CA, #26D0AA, #2BBD7D, #23D5AD);
+  background-size: :400% 400%;
+  position: relative;
+ }
+
+
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing: border-box;
+}
+  .navegacion{
+  width: 1000px;
+  margin: 30px auto;
+  background: #259E92;
+  text-align: right;
+  }
+    .navegacion ul li{
+    list-style: none;
+  }
+   .menu >li{
+     position: relative;
+     display: inline-block;
+     text-decoration: none;
+   }
+   .menu >li >a{
+    display: block;
+    padding: 15px 20px;
+    color:#000000;
+    font-family: "Courier";
+    text-decoration: none;
+   }
+   .menu li a:hover{
+    color:#FF9B00;
+    transition: all .4s;
+   }
+
+
+   .submenu{
+    position: absolute;
+    background:#F8EFFB ;
+    width: 120%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+   }
+   .submenu >li > a {
+      display: block;
+      padding: 15px;
+      color:#000000 ;
+      font-family: "Courier";
+      text-decoration: none;
+   }
+    .menu  >li:hover .submenu{
+        visibility: visible;
+        opacity: 1;
+  }
+   
+
+
+
+.img{
+  position: center;
+  width: 300px;
+  height: 200px;
+  border-radius: 50%;
+  padding-right: 25px;
+  margin:auto;
+}
+.titulo{
+  position: center;
+  padding-left: 30px;
+  padding-top: 50px;
+}
+.parrafo{
+  column-count: 3 ;
+  columns: auto 15em;
+  column-rule: 3px dashed blue;
+  column-gap: 3em;
+  padding-top: 15px;
+  padding-left: 30px;
+}
+ .footer1{
+   width: 100%;
+   height: 1px;
+   margin-top: 150px;
+   background-color: black;
+ }
+ .d{
+  font-family:"Courier";
+  font-size:20px;
+ padding-left:550px;
+ }
+  .cuadro{
+  border: 3px solid #F58EB1;
+  background-color: #F58EB1;
+  padding: 1em;
+  width: 300px;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  color:white;
+  font-family: serif;
+  font-size: large;
+  text-align: center;
+  box-shadow:  5px 5px 5px #999;
+}
+.cuadros{
+  margin:auto;
+  background-color: #F5F6CE;
+  width:800px;
+  height:400px;
+  padding-top: 40px;
+  border: 3px solid black;
+}
+.info{
+  padding: 40px 40px 40px;
+
+}
+
+.html5{
+  border:3px solid #F5A9BC;
+  background-color: #F5A9BC;
+  padding: 1em;
+  width: 650px;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  color :white;
+  font-family: serif;
+  font-size: large;
+  text-align: center;
+  box-shadow: 7px 7px 7px  #999;
+
+}
+.texto{
+  padding: 40px 40px 40px;
+}
+.page{
+  border-radius: 0px;
+  padding: 10px 10px 10px;
+
+}
+.videos{
+   padding: 20px  300px 20px;
+   border:10px solid #F5A9BC;
+
+}
+.biografia{
+   border: 4px solid white;
+  background-color: #EE4545;
+  padding: 2em;
+  width: 300px;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  color: black;
+  font-family: "Couriers";
+  font-size: large;
+  text-align: center;
+}
+.yo{
+  padding: 5px 40px 20px;
+}
+.separador1{
+  height: 70px;
+}
+
+.titulo{
+  font-family: "Courier";
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  border: 3px solid #fff;
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  transform: translate(-60%, 30%);  
+  padding: 1rem 1rem;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.container .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .card img{
+    width: 330px;
+    height: 220px;
+}
+
+
+.container .card h4{
+    font-weight: 600;
+}
+
+.container .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.container .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+}
